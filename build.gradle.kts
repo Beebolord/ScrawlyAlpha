@@ -21,10 +21,16 @@ dependencies {
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
 
+    //Calendar
+    implementation ("com.google.api-client:google-api-client:1.33.0")
+    implementation ("com.google.oauth-client:google-oauth-client-jetty:1.32.1")
+    implementation ("com.google.apis:google-api-services-calendar:v3-rev20211026-1.32.1")
+
 }
 
 tasks.test {
     useJUnitPlatform()
+
 }
 
 tasks.withType<KotlinCompile> {

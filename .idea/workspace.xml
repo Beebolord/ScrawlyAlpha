@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed12df1c-4d1e-4be8-9281-173ef468c542" name="Changes" comment="Connected to the selenium driver.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="ed12df1c-4d1e-4be8-9281-173ef468c542" name="Changes" comment="Entered the schedule page.">
+      <change afterPath="$PROJECT_DIR$/src/credentials.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/CalendarQuickstart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/TutorialKtTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Tutorial.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Tutorial.kt" afterDir="false" />
@@ -26,7 +28,22 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ScrawlyAlpha" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ScrawlyAlpha" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -35,6 +52,8 @@
       <list>
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,7 +78,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/ismae/IdeaProjects/ScrawlyAlpha",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/ismae/IdeaProjects/ScrawlyAlpha/src",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -69,15 +90,48 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ismae\IdeaProjects\ScrawlyAlpha\src" />
       <recent name="C:\Users\ismae\IdeaProjects\ScrawlyAlpha" />
       <recent name="C:\Users\ismae\IdeaProjects\ScrawlyAlpha\src\main\kotlin" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Kotlin.TutorialKt">
-    <configuration name="FirstTest.first" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle run" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.CalendarQuickstart">
+    <configuration name="ScrawlyAlpha [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TutorialKtTest.findCurrent2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -90,7 +144,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;FirstTest.first&quot;" />
+            <option value="&quot;TutorialKtTest.findCurrent2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -100,33 +154,28 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FirstTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ScrawlyAlpha.main" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ScrawlyAlpha.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTest.first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ScrawlyAlpha.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="first" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="TutorialKtTest.testTwoWeeksAfter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TutorialKtTest.testTwoWeeksAfter&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="TutorialKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TutorialKt" />
@@ -135,13 +184,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CalendarQuickstart" />
+      <item itemvalue="Gradle.ScrawlyAlpha [run]" />
+      <item itemvalue="Gradle.TutorialKtTest.findCurrent2" />
+      <item itemvalue="Gradle.TutorialKtTest.testTwoWeeksAfter" />
+      <item itemvalue="Kotlin.TutorialKt" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CalendarQuickstart" />
+        <item itemvalue="Gradle.ScrawlyAlpha [run]" />
         <item itemvalue="Kotlin.TutorialKt" />
-        <item itemvalue="JUnit.FirstTest (1)" />
-        <item itemvalue="JUnit.FirstTest.first" />
-        <item itemvalue="JUnit.FirstTest" />
-        <item itemvalue="Gradle.FirstTest.first" />
+        <item itemvalue="Gradle.TutorialKtTest.testTwoWeeksAfter" />
+        <item itemvalue="Gradle.TutorialKtTest.findCurrent2" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +211,7 @@
       <updated>1654980764959</updated>
       <workItem from="1654980766247" duration="1782000" />
       <workItem from="1654982584644" duration="98000" />
-      <workItem from="1654982859406" duration="12940000" />
+      <workItem from="1654982859406" duration="22666000" />
     </task>
     <task id="LOCAL-00001" summary="Connected to the selenium driver.">
       <created>1654983178129</created>
@@ -164,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654983178129</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Entered the schedule page.">
+      <created>1654998730444</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654998730444</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +246,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Connected to the selenium driver." />
-    <option name="LAST_COMMIT_MESSAGE" value="Connected to the selenium driver." />
+    <MESSAGE value="Entered the schedule page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Entered the schedule page." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ScrawlyAlpha$CalendarQuickstart.ic" NAME="CalendarQuickstart Coverage Results" MODIFIED="1655008534761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
