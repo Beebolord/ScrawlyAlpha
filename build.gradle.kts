@@ -12,10 +12,14 @@ repositories {
 }
 
 dependencies {
+    implementation("junit:junit:4.13.1")
+    implementation("junit:junit:4.13.1")
     testImplementation(kotlin("test"))
 
     // Use the Kotlin JUnit integration.
     implementation (group= "org.seleniumhq.selenium", name = "selenium-java", version =  "3.+" )
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
 
 }
 
